@@ -1,0 +1,31 @@
+<td>{$res['name']}</td>
+                        <td>{$res['roll']}</td>
+                        <td>{$res['course_category']}</td>
+                        <td>{$res['course_name']}</td>
+                        <td>{$res['phone']}</td>
+                        <td>{$res['email']}</td>
+                        <td>{$res['state']}</td>
+                        <td>{$res['gender']}</td>
+                        <td>{$res['languages']}</td>
+                        <td>{$res['address']}</td>
+                        <td>
+                            <form method='POST' action='update.php'>
+                                <input type='hidden' name='nm' value='{$res['name']}'>
+                                <input type='hidden' name='rn' value='{$res['roll']}'>
+                                <input type='hidden' name='rcc' value='{$res['course_category']}'>
+                                <input type='hidden' name='rcn' value='{$res['course_name']}'>
+                                <input type='hidden' name='rph' value='{$res['phone']}'>
+                                <input type='hidden' name='re' value='{$res['email']}'>
+                                <input type='hidden' name='rs' value='{$res['state']}'>
+                                <input type='hidden' name='rg' value='{$res['gender']}'>
+                                <input type='hidden' name='rl' value='{$res['languages']}'>
+                                <input type='hidden' name='ra' value='{$res['address']}'>
+                                <button type='submit'>Update</button>
+                            </form>
+                        </td>
+                        <td>
+                           <form action="delete.php" method="post">
+                            <input type='hidden' name='rn' value='{res['roll']}'>
+                           </form>
+                        </td>
+                    </tr>";
